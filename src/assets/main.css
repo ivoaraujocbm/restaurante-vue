@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+  .page-wrapper {
+    @apply min-h-screen bg-background;
+  }
+
+  .page-container {
+    @apply max-w-5xl mx-auto p-6;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow p-6;
+  }
+
+  .title-page {
+    @apply text-title font-semibold text-textBase;
+  }
+
+  .text-muted {
+    @apply text-body text-textMuted;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded hover:bg-primaryDark transition;
+  }
+
+  .nav-link {
+    @apply text-white hover:underline;
+  }
+}

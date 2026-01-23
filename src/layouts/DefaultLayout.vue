@@ -1,7 +1,13 @@
-<template>
-  <header >
-    <div>
+<script setup>
+  import AppHeader from '@/components/AppHeader.vue';
+</script>
 
-    </div>
-  </header>
+<template>
+  <div class="page-wrapper">
+    <AppHeader />
+
+    <main class="page-container">
+      <slot />
+    </main>
+  </div>
 </template>
