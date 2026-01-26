@@ -3,11 +3,14 @@
   <input
     class="base-input"
     v-bind="$attrs"
-    v-model="modelValue"
+    v-model="model"
   />
 </template>
 
 <script setup>
+
+const model = defineModel();
+
 defineProps({
   modelValue: String
 })
