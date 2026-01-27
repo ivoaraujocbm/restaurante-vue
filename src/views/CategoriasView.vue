@@ -6,7 +6,7 @@
   <DefaultLayout>
     <div class="card">
       <h2 class="title-page">
-        Produtos sistema RestauranteVue
+        Catehorias sistema RestauranteVue
       </h2>
     </div>
   </DefaultLayout>

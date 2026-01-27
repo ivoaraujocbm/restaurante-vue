@@ -6,7 +6,7 @@
   <DefaultLayout>
     <div class="card">
       <h2 class="title-page">
-        Bem-vindo ao sistema do Restaurante 🍽️
+        Bem-vindo ao sistema RestauranteVue 🍽️
       </h2>
       <p class="text-muted mt-2">
         Gerencie categorias, produtos e pedidos de forma simples.
