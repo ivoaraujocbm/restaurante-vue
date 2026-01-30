@@ -1,5 +1,9 @@
 <template>
-  <button class="base-button" :class="variant">
+  <button 
+    class="base-button" 
+    :class="variant" 
+    @click="$emit('click')"
+  >
     <slot />
   </button>
 </template>
@@ -8,38 +12,24 @@
 defineProps({
   variant: {
     type: String,
-    default: 'primary' // primary | secondary | danger
+    default: 'primary'
   }
 })
+defineEmits(['click']) // Declare o evento de clique
 </script>
 
 <style scoped>
+/* O código de estilo que você mandou está correto, 
+   mas ele depende das variáveis abaixo */
 .base-button {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--radius-sm);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
+  padding: 8px 16px; /* Valores fixos caso a variável falhe */
+  border-radius: 4px;
   cursor: pointer;
   border: none;
-  transition: opacity 0.2s ease;
+  font-weight: 500;
 }
 
-.base-button:hover {
-  opacity: 0.9;
-}
-
-.primary {
-  background-color: var(--color-primary);
-  color: var(--color-on-primary);
-}
-
-.secondary {
-  background-color: var(--color-secondary);
-  color: var(--color-on-secondary);
-}
-
-.danger {
-  background-color: var(--color-danger);
-  color: white;
-}
+.success { background-color: #10b981; color: white; }
+.secondary { background-color: #a9bff0; color: #374151; }
+.danger { background-color: #ef4444; color: white; }
 </style>
